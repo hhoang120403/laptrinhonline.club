@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+/*
+CT tinh co bn so chia het cho x:
+if(a%x==0) res = (b-a)%x + 1;
+else res = (b-a)%x;
+*/
+typedef long long ll;
+
+int main(){
+	int t;
+	cin >> t;
+	while(t--){
+		ll m,n,a,b;
+		cin >> m >> n >> a >> b;
+		ll res=0;
+		ll c = a*b/__gcd(a,b);
+		if(m%a==0) res += n/a - m/a + 1;
+		else res += n/a - m/a;
+		if(m%b==0) res += n/b - m/b + 1;
+		else res += n/b - m/b;
+		if(n>=c){
+			if(m%c==0) res -= n/c - m/c + 1;
+			else res -= n/c - m/c;
+		}
+		cout << res << endl;
+	}
+}
