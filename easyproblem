@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 #include<math.h>
 
+//Phan tich thanh thua so nguyen to
+
 using namespace std;
 
 void solve(long long x){
