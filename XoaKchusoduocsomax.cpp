@@ -4,7 +4,7 @@
 using namespace std;
 
 void solve(string n){
-	int k;
+	long long k;
 	cin >> k;
 	stack<char> st,res;
 	int idx=0;
