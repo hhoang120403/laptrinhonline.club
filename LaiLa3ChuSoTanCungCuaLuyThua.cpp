@@ -22,7 +22,7 @@ int main(){
 	long long a=0,b=0;
 	a += s1[s1.size()-1]-'0';
 	if(s1.size()>=2) a += (s1[s1.size()-2]-'0')*10;
-	if(s1.size()>=3) a += (s1[s1.size()-2]-'0')*100;
+	if(s1.size()>=3) a += (s1[s1.size()-3]-'0')*100;
 	for(int i=0;i<s2.size();i++){
 		b = (b*10 + s2[i]-'0') % 1000;
 	}
