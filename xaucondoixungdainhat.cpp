@@ -7,8 +7,9 @@ int main(){
    	string s;
    	cin >> s;
    	int res = 1;
+   	s = '0' + s;
    	int j,k;
-   	for(int i=0;i<s.size();){
+   	for(int i=1;i<=s.size();){
    		j = i, k = i;
    		while(k<s.size() && s[k]==s[k+1]){
    			k++;
